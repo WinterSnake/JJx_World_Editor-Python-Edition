@@ -1,0 +1,7 @@
+Blocks = Standard Blocks
+Block Modifiers = Block extra data (gems, etc)
+Block Data = Storage Blocks (chests, etc)
+Block Add-Ons = Varied Blocks (crafting bench, etc)
+Block Uniques = Unique Block Events (doors, wiring, etc)
+Entities
+Liquids

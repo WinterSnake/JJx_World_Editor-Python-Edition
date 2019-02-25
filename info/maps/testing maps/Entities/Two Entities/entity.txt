@@ -1,0 +1,22 @@
+Brown Bear = (3, 1)
+White Bear = (0, 1)
+
+Entity Amount:
+
+02 00 00 00 03 00 01 00 00 02 00 00 00 01 00 00 03 00
+
+-------------------------------------------
+02 00 00 00 = Entity Amount
+-------------------------------------------
+03 00 01 00 = Entity 1 Location
+00 = Entity 1 Null Byte (?)
+02 00 = Entity 1 ID
+-------------------------------------------
+00 00 01 00 = Entity 2 Location
+00 = Entity 2 Null Byte (?)
+03 00 = Entity 2 ID
+-------------------------------------------
+4 bytes = entity amount
+4 bytes = entity location
+1 byte = persistent tag (00 = persistent / 01 = removed on reload)
+2 bytes = entity id
