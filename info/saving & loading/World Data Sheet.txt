@@ -25,14 +25,12 @@ World Sizes:
 00000024 - 00000027			: Junk Jack World Loader Control
 	• [02 00 01 01]
 
-00000028 - 00000029			: Junk Jack World Load Header Size
-	• TINY		: [D0 05]
-	• SMALL		: [D0 07]
-	• NORMAL	: [D0 09]
-	• LARGE		: [D0 11]
-	• HUGE		: [D0 21]
-
-0000002A - 0000002B			: Byte Null Separator (? = Header Size cont.)
+00000028 - 0000002B			: Junk Jack World Load Header Size
+	• TINY		: [D0 05 00 00]
+	• SMALL		: [D0 07 00 00]
+	• NORMAL	: [D0 09 00 00]
+	• LARGE		: [D0 11 00 00]
+	• HUGE		: [D0 21 00 00]
 
 0000002C - 0000002F			: Junk Jack World Compressed Size (Little Endian)
 00000030 - 00000033			: Junk Jack World Gamemode Loader Preset
@@ -51,13 +49,13 @@ World Sizes:
 00000038 - 0000003B			: Junk Jack Next Byte Addition
 	• Adventure		: Compressed Survival Footer Size
 	• Survival		: Compressed Survival Footer Size
-0000003C - 0000003F			: Junk Jack File X Loader Preset
+0000003C - 0000003F			: Junk Jack File (X) Loader Preset
 
 00000040 - 00000043			: Junk Jack Previous Size + New Bytes (Little Endian)
 	• Adventure		:+ (Compressed Survival Footer Size)
 	• Survival		:+ (Compressed Survival Footer Size)
 00000044 - 00000047			: Junk Jack Next Byte Addition
-00000048 - 0000004B			: Junk Jack File X Loader Preset
+00000048 - 0000004B			: Junk Jack File (X) Loader Preset
 	• Creative		: [05 00 00 00]
 	• Flat			: [05 00 00 00]
 
@@ -65,7 +63,7 @@ World Sizes:
 00000050 - 00000053			: Junk Jack Next Byte Addition
 	• Creative		: Chest Data Size
 	• Flat			: Chest Data Size
-00000054 - 00000057			: Junk Jack File X Loader Preset
+00000054 - 00000057			: Junk Jack File (X) Loader Preset
 	• Adventure		: [05 00 00 00]
 	• Survival		: [05 00 00 00]
 
@@ -75,49 +73,49 @@ World Sizes:
 0000005C - 0000005F			: Junk Jack Next Byte Addition
 	• Adventure		: Chest Data Size
 	• Survival		: Chest Data Size
-00000060 - 00000063			: Junk Jack File X Loader Preset
+00000060 - 00000063			: Junk Jack File (X) Loader Preset
 
 00000064 - 00000067			: Junk Jack Previous Size + New Bytes (Little Endian)
 	• Adventure		: Previous World Size + Chest Size
 	• Survival		: Previous World Size + Chest Size
 00000068 - 0000006B			: Junk Jack Next Byte Addition
-0000006C - 0000006F			: Junk Jack File X Loader Preset
+0000006C - 0000006F			: Junk Jack File (X) Loader Preset
 
 00000070 - 00000073			: Junk Jack Previous Size + New Bytes (Little Endian)
 00000074 - 00000077			: Junk Jack Next Byte Addition
-00000078 - 0000007B			: Junk Jack File X Loader Preset
+00000078 - 0000007B			: Junk Jack File (X) Loader Preset
 
 0000007C - 0000007F			: Junk Jack Previous Size + New Bytes (Little Endian)
 00000080 - 00000083			: Junk Jack Next Byte Addition
-00000084 - 00000087			: Junk Jack File X Loader Preset
+00000084 - 00000087			: Junk Jack File (X) Loader Preset
 
 00000088 - 0000008B			: Junk Jack Previous Size + New Bytes (Little Endian)
 0000008C - 0000008F			: Junk Jack Next Byte Addition
-00000090 - 00000093			: Junk Jack File X Loader Preset
+00000090 - 00000093			: Junk Jack File (X) Loader Preset
 
 00000094 - 00000097			: Junk Jack Previous Size + New Bytes (Little Endian)
 00000098 - 0000009B			: Junk Jack Next Byte Addition
-0000009C - 0000009F			: Junk Jack File X Loader Preset
+0000009C - 0000009F			: Junk Jack File (X) Loader Preset
 
 000000A0 - 000000A3			: Junk Jack Previous Size + New Bytes (Little Endian)
 000000A4 - 000000A7			: Junk Jack Next Byte Addition
-000000A8 - 000000AB			: Junk Jack File X Loader Preset
+000000A8 - 000000AB			: Junk Jack File (X) Loader Preset
 
 000000AC - 000000AF			: Junk Jack Previous Size + New Bytes (Little Endian)
 000000B0 - 000000B3			: Junk Jack Next Byte Addition
-000000B4 - 000000B7			: Junk Jack File X Loader Preset
+000000B4 - 000000B7			: Junk Jack File (X) Loader Preset
 
 000000B8 - 000000BB			: Junk Jack Previous Size + New Bytes (Little Endian)
 000000BC - 000000BF			: Junk Jack Next Byte Addition
-000000C0 - 000000C3			: Junk Jack File X Loader Preset
+000000C0 - 000000C3			: Junk Jack File (X) Loader Preset
 
 000000C4 - 000000C7			: Junk Jack Previous Size + New Bytes (Little Endian)
 000000C8 - 000000CB			: Junk Jack Next Byte Addition
-000000CC - 000000CF			: Junk Jack File X Loader Preset
+000000CC - 000000CF			: Junk Jack File (X) Loader Preset
 
 000000D0 - 000000D3			: Junk Jack Previous Size + New Bytes (Little Endian)
 000000D4 - 000000D7			: Junk Jack Next Byte Addition
-000000D8 - 000000DB			: Junk Jack File X Loader Preset
+000000D8 - 000000DB			: Junk Jack File (X) Loader Preset
 	• Creative		: [13 00 00 00]
 	• Flat			: [13 00 00 00]
 
@@ -127,7 +125,7 @@ World Sizes:
 000000E0 - 000000E3			: Junk Jack Next Byte Addition
 	• Creative		: Entity Data Size
 	• Flat			: Entity Data Size
-000000E4 - 000000E7			: Junk Jack File X Loader Preset
+000000E4 - 000000E7			: Junk Jack File (X) Loader Preset
 	• Adventure		: [13 00 00 00]
 	• Survival		: [13 00 00 00]
 

@@ -1,0 +1,17 @@
+## Remove GitIgnore
+#.gitignore
+
+## Sublime Files
+*.sublime-project
+*.sublime-workspace
+
+## Python Cache
+**/__pycache__
+
+## Bin
+bin/*
+
+## Src
+src/**/*.txt
+
+src/**/debug/
