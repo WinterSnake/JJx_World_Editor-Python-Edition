@@ -142,9 +142,7 @@ World Sizes:
 ---------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------
 000000F0 - 000000FF			: Byte Unknown Element
-00000100 - 00000103			: Junk Jack Last Played Property
-00000104 - 00000105			: Byte Unknown Element
-00000106 - 00000107			: Byte Null Separator
+00000100 - 00000107			: Junk Jack Last Played Property
 00000108 - 00000126			: Junk Jack World Name
 00000127					: Byte Null Separator
 00000128 - 0000012D			: Junk Jack Author Tag
